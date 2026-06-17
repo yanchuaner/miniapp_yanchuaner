@@ -1,0 +1,88 @@
+// ============================================================
+// 燕中校友数字母港 — 全局组件样式
+// CSS 变量在 app.css 中通过 Tailwind @layer base 定义
+// ============================================================
+
+// 全局页面默认值
+page {
+  font-family: "PingFang SC", "Helvetica Neue", Arial, sans-serif;
+  font-size: 28px;
+  color: var(--color-brand-fg);
+  background-color: var(--color-surface-muted);
+}
+
+// ============================================================
+// 组件类 — 参考 Web 端 globals.css @layer components
+// ============================================================
+
+// 毛玻璃卡片
+.glass-card {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(20px);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--color-border-line);
+}
+
+// 通用卡片
+.card {
+  background: var(--color-surface);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--color-border-line);
+}
+
+// 主按钮
+.btn-primary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-brand);
+  color: #FFFFFF;
+  border-radius: var(--radius-btn);
+  font-size: 32px;
+  font-weight: 600;
+  padding: 16px 32px;
+  border: none;
+  transition: opacity 0.2s;
+
+  &:active {
+    opacity: 0.85;
+  }
+}
+
+// 次按钮
+.btn-secondary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(124, 58, 237, 0.1);
+  color: var(--color-brand);
+  border-radius: var(--radius-btn);
+  font-size: 32px;
+  font-weight: 500;
+  padding: 16px 32px;
+  border: 1px solid var(--color-border-line);
+  transition: opacity 0.2s;
+
+  &:active {
+    opacity: 0.85;
+  }
+}
+
+// 输入框
+.input {
+  width: 100%;
+  padding: 16px 20px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border-line);
+  border-radius: var(--radius-btn);
+  font-size: 28px;
+  color: var(--color-brand-fg);
+  outline: none;
+  transition: border-color 0.2s;
+
+  &:focus {
+    border-color: var(--color-brand);
+  }
+}

@@ -1,0 +1,134 @@
+// ---- 主页面 ----
+.mine-page {
+  min-height: 100vh;
+  background: var(--color-surface-muted);
+  padding-bottom: 48px;
+}
+
+// ---- 头部 ----
+.mine-header {
+  position: relative;
+  padding: 80px 32px 48px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.header-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, #7C3AED 0%, #9333EA 50%, #6D28D9 100%);
+  border-radius: 0 0 48px 48px;
+}
+
+.mine-avatar {
+  position: relative;
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  border: 3px solid rgba(255, 255, 255, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  z-index: 1;
+}
+
+.avatar-text {
+  font-size: 40px;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+.mine-name {
+  position: relative;
+  display: block;
+  font-size: 36px;
+  font-weight: 700;
+  color: #FFFFFF;
+  z-index: 1;
+}
+
+.mine-subtitle {
+  position: relative;
+  display: block;
+  font-size: 24px;
+  color: rgba(255, 255, 255, 0.7);
+  margin-top: 8px;
+  z-index: 1;
+}
+
+// ---- 内容区 ----
+.mine-content {
+  padding: 0 24px;
+  margin-top: -16px;
+  position: relative;
+  z-index: 2;
+}
+
+.mine-section {
+  overflow: hidden;
+}
+
+.mine-item {
+  display: flex;
+  align-items: center;
+  padding: 32px 24px;
+  transition: background 0.15s;
+  border-bottom: 1px solid var(--color-border-line);
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.mine-item-hover {
+  background: rgba(124, 58, 237, 0.04);
+}
+
+.mine-item-icon {
+  font-size: 36px;
+  margin-right: 20px;
+}
+
+.mine-item-label {
+  flex: 1;
+  font-size: 30px;
+  font-weight: 500;
+  color: var(--color-brand-fg);
+}
+
+.mine-item-arrow {
+  font-size: 36px;
+  color: #D1D5DB;
+  font-weight: 300;
+}
+
+// ---- 退出登录 ----
+.mine-logout {
+  margin-top: 32px;
+}
+
+.logout-btn {
+  width: 100%;
+}
+
+.logout-btn-text {
+  color: var(--color-brand);
+  font-size: 32px;
+  font-weight: 500;
+}
+
+// ---- 底部 ----
+.mine-footer {
+  padding: 48px 32px 32px;
+  text-align: center;
+}
+
+.footer-text {
+  font-size: 22px;
+  color: #D1D5DB;
+}
